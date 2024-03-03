@@ -12,6 +12,9 @@ public class Dialogue : MonoBehaviour
 
     private int index;
 
+    public SceneChanger transition;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +31,8 @@ public class Dialogue : MonoBehaviour
             {
                 NextLine();
             }
-            else{
+            else
+            {
                 StopAllCoroutines();
                 textComponent.text = lines[index];
             }
@@ -59,7 +63,9 @@ public class Dialogue : MonoBehaviour
         }
         else
         {
-            gameObject.SetActive(false);
+            // gameObject.SetActive(false);
+            transition.FadeToNextLevel();
         }
     }
+
 }
