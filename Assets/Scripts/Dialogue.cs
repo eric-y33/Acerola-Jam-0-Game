@@ -47,7 +47,8 @@ public class Dialogue : MonoBehaviour
 
     IEnumerator TypeLine()
     {
-        foreach (char c in lines[index].ToCharArray()) {
+        foreach (char c in lines[index].ToCharArray()) 
+        {
             textComponent.text += c;
             yield return new WaitForSeconds(textSpeed);
         }

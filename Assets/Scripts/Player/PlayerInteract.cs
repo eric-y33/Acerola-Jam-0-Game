@@ -32,11 +32,14 @@ public class PlayerInteract : MonoBehaviour
         Debug.DrawRay(ray.origin, ray.direction * distance);
 
         RaycastHit hitInfo;
-        if (Physics.Raycast(ray, out hitInfo, distance, mask)) {
-            if (hitInfo.collider.GetComponent<Interactable>() != null) {
+        if (Physics.Raycast(ray, out hitInfo, distance, mask)) 
+        {
+            if (hitInfo.collider.GetComponent<Interactable>() != null) 
+            {
                 Interactable interactable = hitInfo.collider.GetComponent<Interactable>();
                 playerUI.UpdateText(interactable.promptMessage);
-                if (inputManager.onFoot.Interact.triggered) {
+                if (inputManager.onFoot.Interact.triggered) 
+                {
                     interactable.BaseInteract();
                 }
             }
