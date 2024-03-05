@@ -21,13 +21,6 @@ public class Wheel : Interactable
     protected override void Interact() 
     {
         Debug.Log("Interacted with " + gameObject.name);
-        float startTime = 0;
-        isTurning = !isTurning;
-        GetComponent<Animator>().SetBool("IsTurning", isTurning);
-        while (startTime < 0.5) {
-            startTime += Time.fixedDeltaTime;
-            // wait till animation is done (there has to be a better way to do this)
-        }
-        isTurning = !isTurning;
+        GetComponent<Animator>().Play("Turn");
     }
 }
