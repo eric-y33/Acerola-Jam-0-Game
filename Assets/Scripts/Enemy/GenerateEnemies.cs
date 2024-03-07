@@ -30,6 +30,7 @@ public class GenerateEnemies : MonoBehaviour
             zPos = Random.Range(-40, 40);
             Instantiate(enemy, new Vector3(xPos, 1.6f, zPos), Quaternion.identity);
             yield return new WaitForSeconds(0.1f);
+            enemy.SetActive(true);
             enemyCount += 1;
         }
     }

@@ -11,7 +11,7 @@ public class ProgressBar : MonoBehaviour
     public int current;
     public Image mask;
     private int increase = 1;
-    // private int decrease = 1;
+    private int decrease = -1;
 
     void Update()
     {
@@ -27,5 +27,10 @@ public class ProgressBar : MonoBehaviour
     public void increaseCurrent()
     {
         current += increase;
+    }
+
+    public void decreaseCurrent()
+    {
+        current += decrease;
     }
 }
