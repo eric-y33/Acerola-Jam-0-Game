@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class SceneStateChecker : MonoBehaviour
 {
+
+    public ProgressBar extractionProgress;
+    public ProgressBar health;
     // Start is called before the first frame update
     void Start()
     {

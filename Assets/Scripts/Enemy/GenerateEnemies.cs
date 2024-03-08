@@ -67,7 +67,7 @@ public class GenerateEnemies : MonoBehaviour
             GameObject clone = Instantiate(enemy, new Vector3(xPos, 1.6f, zPos), Quaternion.identity);
             clone.SetActive(true);
             yield return new WaitForSeconds(1f);
-            if (progress == 300) {
+            if (progress.current == progress.maximum) {
                 break;
             }
         }
