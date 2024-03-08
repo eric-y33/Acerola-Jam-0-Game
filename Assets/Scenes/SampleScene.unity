@@ -962,6 +962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1532437116104444703}
+  progress: {fileID: 779696892}
 --- !u!1 &1146003952
 GameObject:
   m_ObjectHideFlags: 0
@@ -1673,7 +1674,7 @@ Transform:
   m_GameObject: {fileID: 1532437116104444703}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.75, y: 2.8, z: 6.2}
+  m_LocalPosition: {x: -1, y: 7.71, z: 6.2}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1950,7 +1951,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4956401997198969298, guid: a5606582b3481504b9ba9d8c1452a486, type: 3}
       propertyPath: current
-      value: 33
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4956401997198969298, guid: a5606582b3481504b9ba9d8c1452a486, type: 3}
       propertyPath: maximum
