@@ -703,6 +703,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 561450424}
+  - component: {fileID: 561450425}
   m_Layer: 0
   m_Name: Scene
   m_TagString: Untagged
@@ -730,6 +731,21 @@ Transform:
   - {fileID: 798964303}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &561450425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561450423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67add416886c8e64e9d1742425b621d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extractionProgress: {fileID: 779696892}
+  health: {fileID: 1391757913}
+  sceneChanger: {fileID: 601720998}
 --- !u!20 &564328502 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 7938581444293180692, guid: ef518dd768d40484aa8d31681d028294, type: 3}
