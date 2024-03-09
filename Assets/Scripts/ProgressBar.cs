@@ -29,6 +29,6 @@ public class ProgressBar : MonoBehaviour
 
     public void decreaseCurrent(int decrease)
     {
-        current += decrease;
+        current -= decrease;
     }
 }
