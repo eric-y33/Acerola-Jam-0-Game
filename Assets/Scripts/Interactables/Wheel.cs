@@ -23,6 +23,6 @@ public class Wheel : Interactable
     {
         Debug.Log("Interacted with " + gameObject.name);
         GetComponent<Animator>().Play("Turn");
-        progressBar.increaseCurrent();
+        progressBar.increaseCurrent(1);
     }
 }

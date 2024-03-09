@@ -12,7 +12,7 @@ public class EnemyInteract : Interactable
     void Start()
     {
         // progressBar = GameObject.Find("Health");
-        progressBar.decreaseCurrent();
+        progressBar.decreaseCurrent(3);
         int randomPromptIndex = Random.Range(0,(prompts.Length - 1));
         promptMessage = prompts[randomPromptIndex];
         
@@ -27,7 +27,7 @@ public class EnemyInteract : Interactable
     protected override void Interact() 
     {
         Debug.Log("Interacted with " + gameObject.name);
-        progressBar.increaseCurrent();
+        progressBar.increaseCurrent(2);
         // play death animation, GetComponent<Animator>().Play("death") or whatever
         Destroy(gameObject, 0.1f);
     }

@@ -10,8 +10,6 @@ public class ProgressBar : MonoBehaviour
     public int maximum;
     public int current;
     public Image mask;
-    private int increase = 1;
-    private int decrease = -3;
 
     void Update()
     {
@@ -24,12 +22,12 @@ public class ProgressBar : MonoBehaviour
         mask.fillAmount = fillAmount;
     }
 
-    public void increaseCurrent()
+    public void increaseCurrent(int increase)
     {
         current += increase;
     }
 
-    public void decreaseCurrent()
+    public void decreaseCurrent(int decrease)
     {
         current += decrease;
     }
