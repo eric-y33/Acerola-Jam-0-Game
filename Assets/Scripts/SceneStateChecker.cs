@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Rendering.PostProcessing;
@@ -12,10 +13,12 @@ public class SceneStateChecker : MonoBehaviour
     public SceneChanger sceneChanger;
     public PostProcessVolume volume;
     private Vignette vignette;
+    private ChromaticAberration chromatic;
     // Start is called before the first frame update
     void Start()
     {
         volume.profile.TryGetSettings<Vignette>(out vignette); 
+        volume.profile.TryGetSettings<ChromaticAberration>(out chromatic); 
     }
 
     // Update is called once per frame
@@ -32,6 +35,14 @@ public class SceneStateChecker : MonoBehaviour
             sceneChanger.FadeToNextLevel();
         }
         
-        vignette.smoothness.value = 0.05f;
+        // Make vignette smoother and chromatic aberration more intense as health decreases
+        float healthPercent = Math.Abs((float) health.current/health.maximum);
+        float v = vignette.smoothness.value = 0.05f + (1f-healthPercent)*(0.320f-0.05f);
+        float c = chromatic.intensity.value = (1f-healthPercent)*(0.4f);
+        // Debug.Log(healthPercent);
+        // Debug.Log(v);
+        // Debug.Log(c);
+
+
     }
 }
