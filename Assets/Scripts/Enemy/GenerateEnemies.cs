@@ -64,7 +64,7 @@ public class GenerateEnemies : MonoBehaviour
         {
             xPos = Random.Range(35, 45) * RandomSign();
             zPos = Random.Range(-40, 40);
-            GameObject clone = Instantiate(enemy, new Vector3(xPos, 1.6f, zPos), Quaternion.identity);
+            GameObject clone = Instantiate(enemy, new Vector3(xPos, 0f, zPos), Quaternion.identity);
             clone.SetActive(true);
             yield return new WaitForSeconds(1f);
             if (progress.current == progress.maximum) {
