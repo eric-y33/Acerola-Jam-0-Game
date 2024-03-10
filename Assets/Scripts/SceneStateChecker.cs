@@ -11,6 +11,7 @@ public class SceneStateChecker : MonoBehaviour
     public ProgressBar extractionProgress;
     public ProgressBar health;
     public SceneChanger sceneChanger;
+    public GameObject blast;
     public PostProcessVolume volume;
     private Vignette vignette;
     private ChromaticAberration chromatic;
@@ -32,7 +33,8 @@ public class SceneStateChecker : MonoBehaviour
         if (extractionProgress.current >= extractionProgress.maximum)
         {
             // Do other ending stuff before fading to level
-            sceneChanger.FadeToNextLevel();
+            StartCoroutine(ending());
+            
         }
         
         // Make vignette smoother and chromatic aberration more intense as health decreases
@@ -44,5 +46,13 @@ public class SceneStateChecker : MonoBehaviour
         // Debug.Log(c);
 
 
+    }
+
+    IEnumerator ending()
+    {
+        blast.SetActive(true);
+        extractionProgress.current = 0;
+        yield return new WaitForSeconds(8);
+        sceneChanger.FadeToNextLevel();
     }
 }
