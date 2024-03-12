@@ -18,7 +18,7 @@ public class GenerateEnemies : MonoBehaviour
     private bool fourthWave;
     private bool fifthWave;
 
-    private string[] prompts = new string[]{"[KILL]", "[FORGET]", "[ABANDON]"};
+    private string[] prompts = new string[]{"[DESTROY]", "[FORGET]", "[ABANDON]"};
 
     // Start is called before the first frame update
     void Start()

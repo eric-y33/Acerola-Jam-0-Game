@@ -618,19 +618,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 2085393169}
   lines:
-  - 
+  - 'TIME: 2124-03-13T22:53:33'
   - Today, you embark on one of many crucial missions for the future of humanity.
-  - "It is March 13, 2124. The sea has engulfed Earth\u2019s major landforms."
+  - "The sea has engulfed Earth\u2019s major landforms."
   - Your job is to extract drinking water on the moon of Europa to bring back for
     the small colony of people who still remain on Earth.
   - "You\u2019ve done this dozens of times before without a hitch."
-  - There are very few who volunteer for this job.
-  - Not because it is dangerous.
-  - But because it is lonely.
   - ...
   - How brave.
   - How self-sacrificial.
-  - ...
+  - .....
   - At least the job pays well.
   - ...
   - "It\u2019s time to go."
