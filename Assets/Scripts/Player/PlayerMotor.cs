@@ -16,6 +16,7 @@ public class PlayerMotor : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
