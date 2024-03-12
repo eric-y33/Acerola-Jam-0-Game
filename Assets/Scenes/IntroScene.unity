@@ -618,7 +618,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 2085393169}
   lines:
-  - 'TIME: 2124-03-13T22:53:33'
+  - 'EXTRACTION ORDER: 2124-03-13'
   - Today, you embark on one of many crucial missions for the future of humanity.
   - "The sea has engulfed Earth\u2019s major landforms."
   - Your job is to extract drinking water on the moon of Europa to bring back for
