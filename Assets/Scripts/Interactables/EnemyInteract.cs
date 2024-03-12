@@ -6,7 +6,7 @@ using UnityEngine;
 public class EnemyInteract : Interactable
 {
     public ProgressBar progressBar;
-    private string[] prompts = new string[]{"[KILL]", "[DESTROY]", "[RELEASE]", "[ABANDON]"};
+    private string[] prompts = new string[]{"[...]"};
 
     // Start is called before the first frame update
     void Start()
