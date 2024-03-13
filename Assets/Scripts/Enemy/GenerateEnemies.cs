@@ -25,32 +25,32 @@ public class GenerateEnemies : MonoBehaviour
     {
         // Be sure to update all this if the progress bar maximum changes
         // There is probably a much better way to handle this but this works for now
-        if (firstWave == false && progress.current == 30)
+        if (firstWave == false && progress.current == 40)
         {
             StartCoroutine(EnemyDrop(5, 0, enemy1));
             firstWave = true;
         }
 
-        if (secondWave == false && progress.current == 70)
+        if (secondWave == false && progress.current == 80)
         {
             StartCoroutine(EnemyDrop(8, 0, enemy1));
             secondWave = true;
         }
 
-        if (thirdWave == false && progress.current == 120)
+        if (thirdWave == false && progress.current == 130)
         {
             StartCoroutine(EnemyDrop(12, 1, enemy2));
             thirdWave = true;
         }
 
-        if (fourthWave == false && progress.current == 200)
+        if (fourthWave == false && progress.current == 180)
         {
             StartCoroutine(EnemyDrop(4, 1, enemy2));
             StartCoroutine(EnemyDrop(10, 2, enemy3));
             fourthWave = true;
         }
 
-        if (fifthWave == false && progress.current == 250)
+        if (fifthWave == false && progress.current == 230)
         {
             StartCoroutine(EnemyDrop(6, 0, enemy1));
             StartCoroutine(EnemyDrop(6, 1, enemy2));
