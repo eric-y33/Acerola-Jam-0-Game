@@ -16,6 +16,7 @@ public class SceneStateChecker : MonoBehaviour
     public AudioSource music;
     private Vignette vignette;
     private ChromaticAberration chromatic;
+    private bool isEnding;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,22 +36,25 @@ public class SceneStateChecker : MonoBehaviour
         {
             // Do other ending stuff before fading to level
             StartCoroutine(ending());
-            
+            isEnding = true;
         }
         
         // Make vignette smoother and chromatic aberration more intense as health decreases
-        float healthPercent = Math.Abs((float) health.current/health.maximum);
-        float v = vignette.smoothness.value = 0.05f + (1f-healthPercent)*(0.320f-0.05f);
-        float c = chromatic.intensity.value = (1f-healthPercent)*(0.4f);
-        // Debug.Log(healthPercent);
-        // Debug.Log(v);
-        // Debug.Log(c);
-
-
+        if (!isEnding) 
+        {
+            float healthPercent = Math.Abs((float) health.current/health.maximum);
+            float v = vignette.smoothness.value = 0.05f + (1f-healthPercent)*(0.320f-0.05f);
+            float c = chromatic.intensity.value = (1f-healthPercent)*(0.4f);
+            // Debug.Log(healthPercent);
+            // Debug.Log(v);
+            // Debug.Log(c);
+        } 
     }
 
     IEnumerator ending()
     {
+        music.Stop();
+        vignette.smoothness.value = 0.9f;
         blast.SetActive(true);
         extractionProgress.current = 0;
         yield return new WaitForSeconds(8);

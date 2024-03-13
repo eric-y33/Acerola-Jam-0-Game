@@ -6,6 +6,7 @@ using UnityEngine;
 public class EnemyInteract : Interactable
 {
     public ProgressBar progressBar;
+    public AudioSource voop;
     private string[] prompts = new string[]{"[...]"};
 
     // Start is called before the first frame update
@@ -18,17 +19,11 @@ public class EnemyInteract : Interactable
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     protected override void Interact() 
     {
         Debug.Log("Interacted with " + gameObject.name);
         progressBar.increaseCurrent(2);
-        // play death animation, GetComponent<Animator>().Play("death") or whatever
+        voop.Play();
         Destroy(gameObject, 0.1f);
     }
 }
