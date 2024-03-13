@@ -17391,7 +17391,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1897796358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17601,7 +17601,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5650042863557106427, guid: ef518dd768d40484aa8d31681d028294, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5650042863557106427, guid: ef518dd768d40484aa8d31681d028294, type: 3}
       propertyPath: m_ReceiveShadows
