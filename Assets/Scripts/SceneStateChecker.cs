@@ -13,6 +13,7 @@ public class SceneStateChecker : MonoBehaviour
     public SceneChanger sceneChanger;
     public GameObject blast;
     public PostProcessVolume volume;
+    public AudioSource music;
     private Vignette vignette;
     private ChromaticAberration chromatic;
     // Start is called before the first frame update
