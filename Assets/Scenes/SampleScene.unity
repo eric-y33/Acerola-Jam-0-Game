@@ -12190,7 +12190,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1897796358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12355,7 +12355,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1756104692331450336, guid: ef518dd768d40484aa8d31681d028294, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3069011658825678006, guid: ef518dd768d40484aa8d31681d028294, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12399,7 +12399,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5650042863557106427, guid: ef518dd768d40484aa8d31681d028294, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5650042863557106427, guid: ef518dd768d40484aa8d31681d028294, type: 3}
       propertyPath: m_ReceiveShadows
@@ -12507,7 +12507,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef3f982c590ac9840bc860fd91bf7d03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 2
+  distance: 2.5
   mask:
     serializedVersion: 2
     m_Bits: 64

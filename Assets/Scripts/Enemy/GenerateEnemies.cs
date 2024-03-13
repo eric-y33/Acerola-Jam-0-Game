@@ -20,12 +20,6 @@ public class GenerateEnemies : MonoBehaviour
 
     private string[] prompts = new string[]{"[DESTROY]", "[FORGET]", "[ABANDON]"};
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {

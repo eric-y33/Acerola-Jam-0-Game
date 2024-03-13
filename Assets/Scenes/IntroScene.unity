@@ -618,19 +618,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 2085393169}
   lines:
+  - NEW MESSAGE FROM COMMAND
   - 'EXTRACTION ORDER: 2124-03-13'
   - Today, you embark on one of many crucial missions for the future of humanity.
   - "The sea has engulfed Earth\u2019s major landforms."
   - Your job is to extract drinking water on the moon of Europa to bring back for
     the small colony of people who still remain on Earth.
-  - "You\u2019ve done this dozens of times before without a hitch."
+  - "You\u2019ve done this dozens of times before without issue."
   - ...
   - How brave.
   - How self-sacrificial.
+  - You've abandoned all other dreams to pursue a noble cause.
   - .....
   - At least the job pays well.
   - ...
-  - "It\u2019s time to go."
+  - It's time to get out there.
   textSpeed: 0.03
   transition: {fileID: 4081098772715185585}
 --- !u!1001 &4081098772715185584

@@ -180,20 +180,16 @@ MonoBehaviour:
   - Well.
   - That hasn't happened before.
   - ...
-  - Command won't be too happy.
+  - Command won't be too happy about losing an extractor.
   - But hey, at least you kept your sanity level in check.
-  - Though maybe not enough to keep it together the whole time.
+  - Though maybe not enough to keep the memories from creeping up.
   - ...
   - There are very few who take on this job.
   - Not because it is dangerous.
   - But because it is lonely.
   - ...
-  - You're tired, I know.
-  - Aren't we all?
-  - But I suppose that's the cost of trying.
-  - ...
-  - You've always dreamed of doing something big with your life, haven't you?
-  - It's time to go.
+  - You've always dreamed of going out on your own terms, haven't you?
+  - It's time to get out there.
   textSpeed: 0.03
   transition: {fileID: 4081098772715185585}
 --- !u!114 &283216559
