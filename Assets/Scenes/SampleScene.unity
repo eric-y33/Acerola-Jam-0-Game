@@ -17255,6 +17255,24 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!45 &1561073637
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561073632}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
+--- !u!45 &1561073638
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561073632}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 0}
 --- !u!1 &1598717832
 GameObject:
   m_ObjectHideFlags: 0
@@ -17607,6 +17625,26 @@ PrefabInstance:
       propertyPath: m_ReceiveShadows
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7938581444293180692, guid: ef518dd768d40484aa8d31681d028294, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7938581444293180692, guid: ef518dd768d40484aa8d31681d028294, type: 3}
+      propertyPath: m_ClearFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7938581444293180692, guid: ef518dd768d40484aa8d31681d028294, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7938581444293180692, guid: ef518dd768d40484aa8d31681d028294, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7938581444293180692, guid: ef518dd768d40484aa8d31681d028294, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8001862257892601212, guid: ef518dd768d40484aa8d31681d028294, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0
@@ -17649,6 +17687,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 784013391051696419, guid: ef518dd768d40484aa8d31681d028294, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1561073635}
+    - targetCorrespondingSourceObject: {fileID: 784013391051696419, guid: ef518dd768d40484aa8d31681d028294, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1561073638}
+    - targetCorrespondingSourceObject: {fileID: 784013391051696419, guid: ef518dd768d40484aa8d31681d028294, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1561073637}
   m_SourcePrefab: {fileID: 100100000, guid: ef518dd768d40484aa8d31681d028294, type: 3}
 --- !u!1 &4848106935296085064 stripped
 GameObject:
