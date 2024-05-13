@@ -1,1 +1,1 @@
-Source code for my first person short story game "Extraction Order". More info/zip file download can be found [here on itch.io](https://berc33.itch.io/extraction-order). A playable web version is available [here](https://play.unity.com/mg/other/extractionorderwebgl).
+Source code for my first person short story game "Extraction Order". More info/zip file download can be found [here on itch.io](https://berc33.itch.io/extraction-order). A playable web version is available [here](https://play.unity.com/mg/other/extractionorderwebgl), of which the code in this repository is for.
